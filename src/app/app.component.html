@@ -28,7 +28,7 @@
     <button class="btn btn-primary" (click)="onClickSubmit()">Submit</button>
     
     <br><br>
-  <div id=bmi></div>
+  <div *ngIf="bmi">{{bmi}}</div>
 </div>   
 
 <router-outlet></router-outlet>
