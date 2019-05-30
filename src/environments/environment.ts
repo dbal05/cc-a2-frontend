@@ -4,7 +4,7 @@
 
 export const environment = {
   production: false,
-  api_url: 'http://localhost:1337/bmi889/calculateBMI889'
+  api_url: 'http://192.168.99.100:1337/bmi889/calculateBMI889'
 
 };
 
@@ -16,3 +16,8 @@ export const environment = {
  * on performance if an error is thrown.
  */
 // import 'zone.js/dist/zone-error';  // Included with Angular CLI.
+
+
+// Useful Commands Used: 
+// docker run -it --rm -p 4201:4200 front-end
+// docker build -t front-end
