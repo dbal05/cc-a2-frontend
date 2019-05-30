@@ -17,9 +17,16 @@ export class AppComponent {
 
   constructor(private appService: AppService) {}
 
-  onClickSubmit() {
-    let data = {height: this.height, weight: this.weight};
-    this.appService.getBMI889(data)
-      .subscribe(res => this.bmi = res.bmi);
+  onClickSubmit889() {
+    this.bmi = null;
+    if (this.height == null) {
+      alert('Please Enter Height');
+    } else if (this.weight == null) {
+      alert('Please Enter Weight');
+    } else {
+      let data = {height: this.height, weight: this.weight};
+      this.appService.getBMI889(data)
+        .subscribe(res => this.bmi = res.bmi);
+    }
   }
 }

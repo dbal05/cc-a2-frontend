@@ -15,7 +15,8 @@
 
 
 <div class="container">
-    <h3>Calculate BMI Index</h3>
+    <div class="display-4">Calculate BMI Index</div>
+    <br>
     <div class="form-group">
         <label for="height">Height (In Meters)</label>
         <input type="number" [(ngModel)]="height" name="height" class="form-control" required>
@@ -25,10 +26,10 @@
         <input type="number" [(ngModel)]="weight" name="weight" class="form-control" required>
     </div>
 
-    <button class="btn btn-primary" (click)="onClickSubmit()">Submit</button>
+    <button class="btn btn-primary" (click)="onClickSubmit889()">Submit</button>
     
     <br><br>
-  <div *ngIf="bmi">{{bmi}}</div>
+  <div class="display-4" *ngIf="bmi != null">Your BMI is {{bmi}}</div>
 </div>   
 
 <router-outlet></router-outlet>

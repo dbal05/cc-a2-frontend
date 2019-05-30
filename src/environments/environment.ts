@@ -4,7 +4,7 @@
 
 export const environment = {
   production: false,
-  api_url: 'https://localhost:1337/bmi889/calculateBMI889'
+  api_url: 'http://localhost:1337/bmi889/calculateBMI889'
 
 };
 
